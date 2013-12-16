@@ -53,5 +53,15 @@ var metrics =
     "warning" : 100,
     "critical" : 200,
     "unit"  : "ms"
+  },
+  {
+    "target": "stats.user_app.production.moped.find",
+    "alias" : "Moped finds",
+    "unit"  : "/sec"
+  },
+  {
+    "target": "stats.user_app.production.moped.save",
+    "alias" : "Moped saves",
+    "unit"  : "/sec"
   }
 ];
