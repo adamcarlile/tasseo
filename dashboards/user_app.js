@@ -1,4 +1,4 @@
-var interpolation = "bundle"
+var interpolation = "basis"
 var metrics =
 [
   {
