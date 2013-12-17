@@ -1,4 +1,4 @@
-var interpolation = "basis"
+var interpolation = "monotone"
 var metrics =
 [
   {
