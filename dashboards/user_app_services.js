@@ -1,6 +1,6 @@
-var interpolation = "monotone"
+var interpolation = "bias"
 var period = 5
-var refresh = 2000
+var refresh = 5000
 var metrics =
 [
   {
@@ -19,13 +19,11 @@ var metrics =
   },
   {
     "target": "stats.user_app.production.moped.find",
-    "alias" : "Moped finds",
-    "unit"  : "/sec"
+    "alias" : "Moped finds"
   },
   {
     "target": "stats.user_app.production.moped.save",
-    "alias" : "Moped saves",
-    "unit"  : "/sec"
+    "alias" : "Moped saves"
   },
   {
     "target": "stats.timers.user_app.production.elastic_search.index.update_duration.mean",
@@ -35,18 +33,7 @@ var metrics =
     "unit": "ms"
   },
   {
-    "target": "stats.user_app.production.api.silo.hit",
-    "alias" : "Silo cache hit",
-    "unit" : "/sec"
-  },
-  {
-    "target": "stats.user_app.production.api.silo.miss",
-    "alias" : "Silo cache miss",
-    "unit" : "/sec"
-  },
-  {
     "target": "stats.user_app.production.elastic_search.index.updated",
-    "alias" : "Search index updated",
-    "unit" : "/sec"
+    "alias" : "Search index updated"
    }
 ];
